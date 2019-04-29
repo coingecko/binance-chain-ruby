@@ -5,7 +5,7 @@ require 'pry'
 
 module BinanceChainRuby
   class Client
-    API_URL = "https://testnet-dex.binance.org/api/v1"
+    API_URL = "https://dex.binance.org/api/v1"
     def block_time
       api_url = "#{API_URL}/time"
       output = JSON.parse(HTTP.timeout(:write => 2, :connect => 5, :read => 8).get(api_url))
